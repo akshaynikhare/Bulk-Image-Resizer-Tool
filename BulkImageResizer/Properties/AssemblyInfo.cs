@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("BulkImageCroping")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("created by akshay nikhare")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("BulkImageCroping")]

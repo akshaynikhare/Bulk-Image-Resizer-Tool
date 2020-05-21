@@ -43,9 +43,10 @@
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.inputListBox = new System.Windows.Forms.ListBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.priview = new System.Windows.Forms.PictureBox();
             this.addFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
-            this.priview = new System.Windows.Forms.PictureBox();
+            this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -82,7 +83,8 @@
             this.W,
             this.toolStripLabel3,
             this.H,
-            this.cropBtn});
+            this.cropBtn,
+            this.toolStripLabel2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(800, 25);
@@ -128,7 +130,6 @@
             // 
             // W
             // 
-            this.W.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.W.Name = "W";
             this.W.Size = new System.Drawing.Size(50, 25);
             this.W.Text = "100";
@@ -141,7 +142,6 @@
             // 
             // H
             // 
-            this.H.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.H.Name = "H";
             this.H.Size = new System.Drawing.Size(50, 25);
             this.H.Text = "100";
@@ -151,6 +151,7 @@
             this.cropBtn.Enabled = false;
             this.cropBtn.Image = ((System.Drawing.Image)(resources.GetObject("cropBtn.Image")));
             this.cropBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cropBtn.Margin = new System.Windows.Forms.Padding(30, 1, 30, 2);
             this.cropBtn.Name = "cropBtn";
             this.cropBtn.Size = new System.Drawing.Size(74, 22);
             this.cropBtn.Text = "Resize all";
@@ -195,13 +196,6 @@
             this.panel1.Size = new System.Drawing.Size(340, 403);
             this.panel1.TabIndex = 0;
             // 
-            // addFileDialog
-            // 
-            this.addFileDialog.DefaultExt = "pdf";
-            this.addFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif;" +
-    " *.png";
-            this.addFileDialog.Multiselect = true;
-            // 
             // priview
             // 
             this.priview.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -211,6 +205,21 @@
             this.priview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.priview.TabIndex = 0;
             this.priview.TabStop = false;
+            // 
+            // addFileDialog
+            // 
+            this.addFileDialog.DefaultExt = "pdf";
+            this.addFileDialog.Filter = "Image files (*.jpg, *.jpeg, *.jpe, *.jfif, *.png) | *.jpg; *.jpeg; *.jpe; *.jfif;" +
+    " *.png";
+            this.addFileDialog.Multiselect = true;
+            // 
+            // toolStripLabel2
+            // 
+            this.toolStripLabel2.ForeColor = System.Drawing.Color.Blue;
+            this.toolStripLabel2.Name = "toolStripLabel2";
+            this.toolStripLabel2.Size = new System.Drawing.Size(108, 22);
+            this.toolStripLabel2.Text = "Created by Akshay ";
+            this.toolStripLabel2.Click += new System.EventHandler(this.toolStripLabel2_Click);
             // 
             // Form1
             // 
@@ -257,6 +266,7 @@
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.ToolStripProgressBar progressBar;
         private System.Windows.Forms.PictureBox priview;
+        private System.Windows.Forms.ToolStripLabel toolStripLabel2;
     }
 }
 
